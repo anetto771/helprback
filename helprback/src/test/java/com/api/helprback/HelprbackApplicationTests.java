@@ -9,5 +9,4 @@ class HelprbackApplicationTests {
 	@Test
 	void contextLoads() {
 	}
-
 }
