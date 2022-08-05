@@ -9,36 +9,30 @@
 9. Comandos básicos de Gatilhos.
 10. Comandos Básicos de Procedimentos.
 # helpr-back [Aulas de Java Spring]
-1.  Criação do Projeto em Spring Boot - Java.
-2.  Criação das Classes Enumeradoras.
-3.  Criação das Classes com Modelagem ORM para MySQL.
-4.  Camada de Domínio de e Instancias de ORM.
-5.  Utilização do Postman aplicação de consumo de EndPoints.
-6.  Classe Pessoas(Técnicos e Clientes) e Chamados.
-7.  O que são camadas de repositório? (Camadas de organização de acesso aos dados.)
-8.  Atribuição inicial de dados e configuração de tabelas.
-9.  O que são camadas de configuração? (Camadas de controle para desenvolvedores.)
-10.  Configuração de Perfil de "teste" e "dev".
-11.  O que são camadas de serviços? (Camadas de controle de interação da aplicação.)
-12.  O que são camadas de recursos? (Controles de entregas de Json.)
-13.  Interligação da Classes de Técnicos findById
-14.  Padrões de DTO com uso de pacotes separados de acesso.
-15.  Tratamento de ERRO 500 HTTP.
-16.  Verbos e rotas em HTTO e biblioteca de erros.
-17.  FindAll na classe de Técnicos.
-18.  Injeção de informações via arquitetura MVP.
-19.  Analise de duplicidade de chaves com uso do CPF.
-20.  Tratamento de validações de estrutura.
-21.  Update utilizando a classe de Técnicos como exemplo.
-22.  Exclusão de entidades com uso da Classe Técnico.
-23.  Criação, Alteração e Exclusão da Classe de Clientes.
-24.  findById usando a classe relacional Chamado.
-25.  Exibição de relatórios de chamados na interface.
-26.  Inclusão de um chamado via verbos de HTTP.
-27.  Alterando informações do Chamado.
-28.  Utilizando autenticação com ferramenta JWT.
-29.  Mecânicas de Autorização de entrada para cada tipo de pessoa.
-30.  Subindo o link de produção em Deploy.
-31.  Integração com projeto de angular.
-32.  Sistemas de coleta via serviços Angular.
-33.  Organização com atendimento via interfaces.
+<ol>
+<li>"[JAVA-BACK] Criação do Projeto em Spring Boot","","Done","30","Aug 2, 2022"</li>
+<li>"[JAVA-BACK] Criação das Classes Enumeradoras.","","Done","30","Aug 2, 2022"</li>
+<li>"[JAVA-BACK] Criação das Classes com Modelagem ORM para MySQL.","","Done","60","Aug 3, 2022"</li>
+<li>"[JAVA-BACK] Criação de vínculos com banco de dados por entidades. [ORM]","","Done","60","Aug 4, 2022"</li>
+<li>"[JAVA-BACK] Classe Pessoas(Técnicos e Clientes) e Chamados.","","Done","60","Aug 5, 2022"</li>
+<li>"[JAVA-BACK] Carga Inicial de dados e princípios de testes.","","Todo","60","Aug 8, 2022"</li>
+<li>"[JAVA-BACK] Configurações de de teste e desenvolvimento","","undefined","60","Aug 8, 2022"</li>
+<li>"[JAVA-BACK] Métodos de validação de perfil de aplicação.","","undefined","30","Aug 9, 2022"</li>
+<li>"[JAVA-BACK] Serviços de acesso aos dados. [Técnico]","","undefined","30","Aug 9, 2022"</li>
+<li>"[JAVA-BACK] Configurações de Classes de acesso em DTO","","undefined","90","Aug 10, 2022"</li>
+<li>"[JAVA-BACK] Fundamentos de tratamento de erros com uso de Handler.","","undefined","90","Aug 10, 2022"</li>
+<li>"[JAVA-BACK] Controladores de serviços e json de erro.","","undefined","120","Aug 11, 2022"</li>
+<li>"[JAVA-BACK] Serviço de criação de Técnico","","undefined","90","Aug 12, 2022"</li>
+<li>"[JAVA-BACK] Método de checagem de CPF de chave única.","","undefined","120","Aug 15, 2022"</li>
+<li>"[JAVA-BACK] Utilização dos mecanismos de Validação das dependências.","","undefined","90","Aug 16, 2022"</li>
+<li>"[JAVA-BACK] Serviço de alteração de dados do Técnico.","","undefined","90","Aug 17, 2022"</li>
+<li>"[JAVA-BACK] Serviço de exclusão de Técnico.","","undefined","90","Aug 18, 2022"</li>
+<li>"[JAVA-BACK] Tratamento dos métodos de CRUD da Classe de cliente.","","undefined","180","Aug 19, 2022"</li>
+<li>"[JAVA-BACK] relatório por ID de Chamados.","","undefined","60","Aug 22, 2022"</li>
+<li>"[JAVA-BACK] Serviço de listagem de Chamados.","","undefined","60","Aug 23, 2022"</li>
+<li>"[JAVA-BACK] Serviço de criação dos novos Chamados.","","undefined","90","Aug 24, 2022"</li>
+<li>"[JAVA-BACK] Serviço de alteração e manipulação de Chamados.","","undefined","120","Aug 25, 2022"</li>
+<li>"[JAVA-BACK] Instalação do Security de JWT e uso do Token de segurança.","","undefined","240","Aug 26, 2022"</li>
+<li>"[JAVA-BACK] Mecanismos de validação por meio de autenticação ao Back com JWT.","","undefined","360","Aug 29, 2022"</li>
+<li>"[JAVA-BACK] Deploy para inicialização da imersão.","","undefined","90","Aug 29, 2022"</li>
+</ol>
