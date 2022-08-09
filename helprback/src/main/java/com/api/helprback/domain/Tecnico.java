@@ -26,6 +26,4 @@ public class Tecnico extends Pessoa{
     public void setChamados(List<Chamado> chamados) {
         this.chamados = chamados;
     }
-
-
 }
