@@ -2,6 +2,7 @@ package com.api.helprback.domain;
 
 import com.api.helprback.domain.enums.Perfil;
 import com.fasterxml.jackson.annotation.JsonFormat;
+import com.fasterxml.jackson.annotation.JsonIgnore;
 
 import javax.persistence.*;
 import java.io.Serializable;
