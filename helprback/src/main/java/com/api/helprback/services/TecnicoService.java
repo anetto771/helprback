@@ -47,4 +47,12 @@ public class TecnicoService {
             throw new DataIntegrityViolationException("E-mail já existente no sistema!");
         }
     }
+
+    public Tecnico update(Integer id, TecnicoDTO objDto) {
+        objDto.setId(id);
+        Tecnico oldObj = findById(id);
+        validaPorCpfEEmail(objDto);
+        oldObj = new Tecnico(objDto);
+        return repository.save(oldObj);
+    }
 }
