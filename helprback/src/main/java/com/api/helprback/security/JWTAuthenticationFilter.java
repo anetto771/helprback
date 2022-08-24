@@ -1,5 +1,6 @@
 package com.api.helprback.security;
 
+
 import com.api.helprback.domain.dtos.CredenciaisDTO;
 import com.fasterxml.jackson.databind.ObjectMapper;
 import org.springframework.security.authentication.AuthenticationManager;
@@ -66,12 +67,13 @@ public class JWTAuthenticationFilter extends UsernamePasswordAuthenticationFilte
         response.setContentType("application/json");
         response.getWriter().append(json());
     }
-    private CharSequence json(){
+    private CharSequence json() {
         long date = new Date().getTime();
         return "{"
-                +"\"timestamp\": "+date+", "
-                +"\"status\": \"Não autorizado\", "
-                +"\"message\": \"Email ou senha inválidos\", "
-                +"\"path\": \"/login\"}";
+                + "\"timestamp\": " + date + ", "
+                + "\"status\": 401, "
+                + "\"error\": \"Não autorizado\", "
+                + "\"message\": \"Email ou senha inválidos\", "
+                + "\"path\": \"/login\"}";
     }
 }
