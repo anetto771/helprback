@@ -65,4 +65,9 @@ public class ChamadoService {
 
         return chamado;
     }
+
+    public List<Chamado> reportSemanalChamadosTecnico(Integer idTecnico) {
+        Optional<List<Chamado>> obj = repository.reportByTecnicoChamadoSemanal(idTecnico);
+        return obj.orElseThrow(() -> new ObjectNotFoundException("Não existem chamados neste semana para:"+idTecnico));
+    }
 }
