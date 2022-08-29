@@ -44,4 +44,11 @@ public class ChamadoResource {
         Chamado newObj = chamadoService.update(id, objDto);
         return ResponseEntity.ok().body(new ChamadoDTO(newObj));
     }
+    @GetMapping(value = "/report/tecnico/{idTecnico}")
+    public ResponseEntity<List<ChamadoDTO>> reportByTecnicoChamadoSemanal(@PathVariable Integer idTecnico){
+        List<Chamado> report = chamadoService.reportSemanalChamadosTecnico(idTecnico);
+        List<ChamadoDTO> reportDto = report.stream().map(rel -> new ChamadoDTO(rel)).collect(Collectors.toList());
+        return ResponseEntity.ok().body(reportDto);
+    }
+
 }
