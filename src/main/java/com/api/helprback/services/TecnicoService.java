@@ -70,4 +70,8 @@ public class TecnicoService {
         }
         repository.deleteById(id);
     }
+    public List<Tecnico> reportTecnicoChamadoPrioridadeDia(){
+        Optional<List<Tecnico>> obj = repository.reportByTecnicoChamadoPrioridadeDia();
+        return obj.orElseThrow(() -> new ObjectNotFoundException("Neste dia não há tecnicos em urgência."));
+    }
 }

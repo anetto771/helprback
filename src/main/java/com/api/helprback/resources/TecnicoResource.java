@@ -33,6 +33,12 @@ public class TecnicoResource {
         List<TecnicoDTO> listDto = list.stream().map(obj -> new TecnicoDTO(obj)).collect(Collectors.toList());
         return ResponseEntity.ok().body(listDto);
     }
+    @GetMapping(value = "/report/urgencia/dia")
+    public ResponseEntity<List<TecnicoDTO>> reportTecnicoUrgenciaDia(){
+        List<Tecnico> report = tecnicoService.reportTecnicoChamadoPrioridadeDia();
+        List<TecnicoDTO> reportDto = report.stream().map(obj -> new TecnicoDTO(obj)).collect(Collectors.toList());
+        return ResponseEntity.ok().body(reportDto);
+    }
     @PreAuthorize("hasAnyRole('ROLE_ADMIN')")
     @PostMapping
     public ResponseEntity<TecnicoDTO> create(@Valid @RequestBody TecnicoDTO objDto){
